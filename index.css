@@ -1,0 +1,95 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+body,html{
+    width:100%;
+    height:100%;
+    background-color:white;
+}
+.navbar{
+    width:100%;
+    height:100px;
+    display:flex;
+    justify-content:space-between;
+    padding:0 20px;
+    background-color:black;
+    align-items: center;
+    color:white;
+
+    
+}
+.navopt{
+    display: flex;
+    padding:0 10px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.navopt li{
+    list-style: none;
+    padding:0 20px;
+    font-size: 20px;
+}
+.data-login h1{
+    font-family:'poppins';
+    text-align: center;
+    padding:20px 0;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+a:hover{
+    color:red;
+    font-size: 22px;
+    transition: 1s ease;
+}
+.maincont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:100px;
+}
+.login-form{
+    background-color: rgb(94, 91, 91);
+    height:400px;
+    display: flex;
+    flex-direction: column;
+    width:500px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.login-form label{
+    font-size: 20px;
+    margin:20px 0;
+    color:white;
+}
+[placeholder]{
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-bottom: 1px solid black;
+    height:40px;
+    width:280px;
+    font-size: 15px;
+    margin:20px 0;
+    color:black;
+    padding:0 10px;
+}
+button{
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    
+}

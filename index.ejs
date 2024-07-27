@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>king's kids page</title>
+    <link rel="stylesheet" href="stylesheets/index.css">
+    <script src="https://cdn.socket.io/socket.io-1.0.0.js"></script>
+    <script>
+      const socket = io();
+
+      // Listen for logout event
+      socket.on('user-logged-out', () => {
+        window.location.reload(); // Refresh the page
+      });
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <h2>King's Kids Educational Society</h2>
+        </div>
+        <div class="navopt">
+            <li class="navlinks">Home</li>
+            <li><a href="/createdata">Create</a></li>
+            <li><a href="/viewdata">Viewdata</a></li>
+        
+            <li><a href="/logout">Logout</a></li>
+        </div>
+    </div>
+   <div class="data-login">
+    <h1>Please Login</h1>
+   </div>
+   <div class="maincont">
+    <div class="login-form">
+        <form action="/register" method="post">
+            <label>Email</label><br>
+            <input type="text" name="email" placeholder="Enter Email"><br>
+            <label for="">Password</label><br>
+            <input type="password" name="password" placeholder="Enter Password"><br>
+            <button type="submit">Submit</button>
+            
+            
+        </form>
+        
+
+
+       </div>
+   </div>
+   
+</body>
+</html>

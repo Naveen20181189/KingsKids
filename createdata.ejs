@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Application Form</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+  }
+  .container {
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  label {
+    font-weight: bold;
+  }
+  .form-group {
+    margin-bottom: 15px;
+  }
+  .form-group input[type="text"],
+  .form-group input[type="number"],
+  .form-group input[type="date"],
+  .form-group select,
+  .form-group textarea,
+  .form-group input[type="tel"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  .form-group textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  .form-group.radio-group label {
+    display: inline-block;
+    margin-right: 15px;
+  }
+  .form-group.col-half {
+    width: 48%;
+    display: inline-block;
+    margin-right: 2%;
+  }
+  .form-group.col-half:last-child {
+    margin-right: 0;
+  }
+  .form-group.col-full {
+    width: 100%;
+  }
+  .form-group.checkbox-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .form-group.checkbox-group label input {
+    margin-right: 5px;
+  }
+  .form-group.checkbox-group label:last-child {
+    margin-bottom: 0;
+  }
+  .form-group.phone-group input[type="tel"] {
+    width: calc(50% - 5px);
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .form-group.phone-group input[type="tel"]:last-child {
+    margin-right: 0;
+  }
+  .form-group.address-group input[type="text"],
+  .form-group.address-group select {
+    width: calc(50% - 5px);
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .form-group.address-group input[type="text"]:last-child,
+  .form-group.address-group select:last-child {
+    margin-right: 0;
+  }
+
+  /* Media Queries for Tablet */
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+    .form-group.col-half {
+      width: 100%;
+      margin-right: 0;
+    }
+    .form-group.phone-group input[type="tel"],
+    .form-group.address-group input[type="text"],
+    .form-group.address-group select {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+
+  /* Media Queries for Mobile */
+  @media (max-width: 480px) {
+    .container {
+      padding: 5px;
+    }
+    .form-group.col-half {
+      width: 100%;
+      margin-right: 0;
+    }
+    .form-group.phone-group input[type="tel"],
+    .form-group.address-group input[type="text"],
+    .form-group.address-group select {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Student Application Form</h2>
+  
+  <form action="/submit-form" method="post">
+    <!-- Section: Personal Information -->
+    <!-- <div class="form-group">
+      
+      <input type="file" id="student-name" name="photo" accept="uploads/*" required>
+    </div> -->
+    <div class="form-group">
+      <label for="status">Student Status:</label><br>
+      <label><input type="radio" name="status" value="orphan"> Orphan</label>
+      <label><input type="radio" name="status" value="poor"> Poor</label>
+      <label><input type="radio" name="status" value="single-parent"> Single Parent Child</label>
+      <label><input type="radio" name="status" value="Other">Others</label>
+    </div>
+    
+    <div class="form-group">
+      <label for="student-name">Student Name:</label>
+      <input type="text" id="student-name" name="studentname" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="student-id">Student ID:</label>
+      <input type="text" id="student-id" name="studentid">
+    </div>
+    
+    <div class="form-group">
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="caste">Caste:</label>
+      <input type="text" id="caste" name="caste">
+    </div>
+    
+    <div class="form-group">
+      <label for="religion">Religion:</label>
+      <input type="text" id="religion" name="religion">
+    </div>
+    
+    <div class="form-group">
+      <label for="gender">Gender:</label><br>
+      <label><input type="radio" name="gender" value="male"> Male</label>
+      <label><input type="radio" name="gender" value="female"> Female</label>
+      <label><input type="radio" name="gender" value="other"> Other</label>
+    </div>
+    
+    <div class="form-group">
+      <label for="education">Educational Qualification:</label>
+      <input type="text" id="education" name="education">
+    </div>
+    
+    <div class="form-group">
+      <label for="health-condition">Student Health Condition:</label><br>
+      <select id="health-condition" name="healthcondition">
+        <option value="good">Good</option>
+        <option value="average">Average</option>
+        <option value="weak">Weak</option>
+        <option value="physically-handicapped">Physically Handicapped</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <label for="health-reason">Reason for Health Condition:</label>
+      <textarea id="health-reason" name="healthreason"></textarea>
+    </div>
+    
+    <!-- Section: Previous School Information -->
+    <h3>Previous School Information</h3>
+    
+    <div class="form-group">
+      <label for="previous-school">Name of Previous School:</label>
+      <input type="text" id="previous-school" name="previousschool">
+    </div>
+    
+    <div class="form-group">
+      <label for="school-village">Village of Previous School:</label>
+      <input type="text" id="school-village" name="schoolvillage">
+    </div>
+    
+    <!-- Section: Family Information -->
+    <h3>Family Information</h3>
+    
+    <div class="form-group">
+      <label for="siblings">Number of Siblings:</label>
+      <input type="number" id="siblings" name="siblings">
+    </div>
+    
+    <div class="form-group">
+      <label for="father-name">Father's Name:</label>
+      <input type="text" id="father-name" name="fathername">
+    </div>
+    
+    <div class="form-group">
+      <label for="mother-name">Mother's Name:</label>
+      <input type="text" id="mother-name" name="mothername">
+    </div>
+    
+    <div class="form-group">
+      <label for="father-aadhar">Father's Aadhar Number:</label>
+      <input type="text" id="father-aadhar" name="fatheraadhar">
+    </div>
+    
+    <div class="form-group">
+      <label for="mother-aadhar">Mother's Aadhar Number:</label>
+      <input type="text" id="mother-aadhar" name="motheraadhar">
+    </div>
+    
+    <div class="form-group">
+      <label for="student-aadhar">Student's Aadhar Number:</label>
+      <input type="text" id="student-aadhar" name="studentaadhar">
+    </div>
+    
+    <div class="form-group">
+      <label for="student-address">Student's Address:</label><br>
+      <input type="text" id="student-village" name="studentvillage" placeholder="Village">
+      <input type="text" id="student-mandal" name="studentmandal" placeholder="Mandal">
+      <input type="text" id="student-district" name="studentdistrict" placeholder="District">
+      <input type="text" id="student-pincode" name="studentpincode" placeholder="Pincode">
+    </div>
+    
+    <!-- Section: Admission Information -->
+    <h3>Admission Information</h3>
+    
+    <div class="form-group">
+      <label for="admission-reason">Reason for Admission:</label>
+      <textarea id="admission-reason" name="admissionreason"></textarea>
+    </div>
+    
+    <div class="form-group">
+      <label for="admitted-by">Name of Person Admitting:</label>
+      <input type="text" id="admitted-by" name="admittedby">
+    </div>
+    
+    <div class="form-group">
+      <label for="admitter-address">Admitter's Address:</label><br>
+      <input type="text" id="admitter-village" name="admittervillage" placeholder="Village">
+      <input type="text" id="admitter-mandal" name="admittermandal" placeholder="Mandal">
+      <input type="text" id="admitter-district" name="admitterdistrict" placeholder="District">
+      <input type="text" id="admitter-pincode" name="admitterpincode" placeholder="Pincode">
+    </div>
+    
+    <div class="form-group">
+      <label for="admitter-phone">Admitter's Phone Number:</label>
+      <input type="tel" id="admitter-phone" name="admitterphone">
+    </div>
+    
+    <div class="form-group">
+      <label for="relationship">Relationship with Student:</label>
+      <input type="text" id="relationship" name="relationship">
+    </div>
+    
+    <!-- Section: Emergency Contact Information -->
+    <h3>Emergency Contact Information</h3>
+    
+    <div class="form-group">
+      <label for="emergency-contact-name">Emergency Contact Name:</label>
+      <input type="text" id="emergency-contact-name" name="emergencycontactname">
+    </div>
+    
+    <div class="form-group">
+      <label for="emergency-contact-phone">Emergency Contact Phone Number:</label>
+      <input type="tel" id="emergency-contact-phone" name="emergencycontactphone">
+    </div>
+    
+    <div class="form-group">
+      <label for="emergency-contact-address">Emergency Contact Address:</label><br>
+      <input type="text" id="emergency-contact-village" name="emergencycontactvillage" placeholder="Village">
+      <input type="text" id="emergency-contact-mandal" name="emergencycontactmandal" placeholder="Mandal">
+      <input type="text" id="emergency-contact-district" name="emergencycontactdistrict" placeholder="District">
+      <input type="text" id="emergency-contact-pincode" name="emergencycontactpincode" placeholder="Pincode">
+    </div>
+    
+    <button type="submit">Submit Application</button>
+  </form>
+</div>
+
+</body>
+</html>

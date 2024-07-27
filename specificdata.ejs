@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stylesheets/specific.css">
+    <title>Document</title>
+</head>
+<style>
+    /* *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+    h2{
+        text-align: center;
+        color:red;
+    } */
+</style>
+<body>
+    <div class="heading">
+        <span><%= usering.studentname %></span>
+        
+    </div>
+    <h2 class="subheading">Student details</h2>
+    <div class="major">
+        <h3>Student Status: <span><%= usering.status %></span></h3>
+        <h3>StudentName: <span><%= usering.studentname %></span></h3>
+        <h3>StudentID:   <span><%= usering.studentid %></span></h3>
+        <h3>Gender: <span><%= usering.gender %></span></h3>
+        <h3>Date of Birth: <span><%= usering.dob %> (Year-Month-day)</span></h3>
+        <h3>Caste: <span><%= usering.caste %></span></h3>
+        <h3>Religion: <span><%= usering.religion %></span></h3>
+        <h3>Grade(Standard): <span><%= usering.education %></span></h3>
+        <h3>Student Aadhar: <span><%= usering.studentaadhar %></span></h3>
+        <h3>Student Address: <span><%= usering.studentvillage %></span>,<span><%= usering.studentmandal %> Mandal</span>,<span><%= usering.studentdistrict %> District</span>,<%= usering.studentpincode %></h3>
+        <div class="border"></div>
+    </div>
+    <div class="major">
+        <h2 class="subheading">Family Details</h2>
+        <h3>MotherName: <span><%= usering.mothername %></span></h3>
+        <h3>FatherName: <span><%= usering.fathername %></span></h3>
+        <h3>Mother Aadhar: <span><%= usering.motheraadhar %></span></h3>
+        <h3>Father Aadhar: <span><%= usering.fatheraadhar %></span></h3>
+        <h3>No.of Siblings: <span><%= usering.siblings %></span></h3>
+        <div class="border"></div>
+    </div>
+    <div class="major">
+        <h2 class="subheading">Student Previous Schooling And Health</h2>
+        <h3>Previous School: <span><%= usering.previousschool %></span></h3>
+        <h3>Previous School Address: <span><%= usering.schoolvillage %></span></h3>
+        <h3>Student Health-Condition: <span><%= usering.healthcondition %></span></h3>
+        <h3>Reason Of Sickness: <span><%= usering.healthreason %></span></h3>
+    </div>
+    <div class="border"></div>
+    <div class="major">
+        <h2 class="subheading">Addmission Information</h2>
+        <h3>Reason for Addmission: <span><%= usering.admissionreason %></span></h3>
+        <h3>Name of the Person Who Admitted The Student: <span><%= usering.admittedby %></span></h3>
+        <h3>Admitter's Address: <span><%= usering.admittervillage %></span>,<span><%= usering.admittermandal %> Mandal</span>,<span><%= usering.admitterdistrict %> District</span>,<%= usering.admitterpincode %></h3>
+        <h3>Admitter's PhoneNumber : <span><%= usering.admitterphone %></span></h3>
+        <h3>Relationship With Student: <span><%= usering.relationship %></span></h3>
+        
+    </div>
+    <div class="border"></div>
+    <div class="major">
+        <h2 class="subheading">Emergency-contact Information</h2>
+
+        <h3>Emergency Contact(Name): <span><%= usering.emergencycontactname %></span></h3>
+        <h3>Emergency Contact Number: <span><%= usering.emergencycontactphone %></span></h3>
+        <h3>Address: <span><%= usering.emergencycontactvillage %></span>,<span><%= usering.emergencycontactmandal %> Mandal</span>,<span><%= usering.emergencydist %> District,<span><%= usering.emerpin %></span></span></h3>
+    </div>
+</body>
+
+</html>

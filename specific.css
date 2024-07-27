@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px 0;
+
+    
+}
+.subheading{
+    font-size: 24px;
+    text-align: center;
+    padding:10px 0;
+}
+.heading span{
+    color:red;
+    border-bottom: 5px solid black;
+    font-size: 30px;
+    padding:10px 0;
+
+}
+span{
+    color:black;
+    padding-left:10px;
+    font-weight: 600;
+}
+.major h3{
+    padding-left:100px;
+    
+    padding-bottom:10px;
+}
+.border{
+    border-bottom: 5px solid black;
+    margin: 0 100px;
+    padding-top:20px;
+}
