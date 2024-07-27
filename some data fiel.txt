@@ -1,0 +1,8 @@
+firebaseConfig = {
+  apiKey: "AIzaSyBG16bT7egJTDs5DgtgpsAcckixR6nQ0OM",
+  authDomain: "king-s-kids-project.firebaseapp.com",
+  projectId: "king-s-kids-project",
+  storageBucket: "king-s-kids-project.appspot.com",
+  messagingSenderId: "648497383202",
+  appId: "1:648497383202:web:ccd9e2e6a15934fd13877b",
+  measurementId: "G-XQ13MDCNSY"

@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "king-s-kids-project",
+  "private_key_id": "fd27537c06224bf22764a813523dc8cf8cf485d9",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDaswEXexxN6kuD\nq2TdPWGV6d/h0x0i4uGJD2OZ8VdELD2wcH8ii5721BXypfRWn+b+JiZFfZKlSOyR\nUH052SRziI7PMSs3hikhhuGrNmazumdewdA9GFSLg7TXFt5KBpGvcoFB3/jOpqDx\ndOwqmbOkkwD8AcytXmxqYdDxwMaGL8p127Z2VsQ4VxQLWf5/qq1dU4mmlEP/6V2T\n3zSdGx+xWYmPy/3T8g7QLgkKpjjdphmrhxJIlbZAO1vJ7FBpsoP3PA+diOcBJFvR\n+gDFtvHVT8mDQeu4agp5CzfyAW5IUJ0mBi7gUUjzs8SdJvOyQ3cnM4a5sT6ysphY\nekYQvJfRAgMBAAECggEADJNbfjapj39n/TfHUoN7j4vFwG4L0Fw8fM2iPBFpI7Xp\njDJD1UAzEV1rr6rETJDgTv/xlnBclN2HIOoAcWmfk3coQxjAM+6mgdOIOXik2jPf\nSs8ZQtIZ1nXp2a5qdNZA3VZXwWp4G6XwPkIrbF2vO0jqtxMBanyx/kIGqkgcAk40\n/u1j9lr0jtIu0HLBiHSBfrH/ew6BN3hPKJDKva0hRW8QFpKn8HbADHpOxLPXPpZ8\nzwaMwFF3QnttZY313ZKgzxh9lvEEjHEP4IPNbYc7hXLHpauEYsnfIpLgSmtSg+Zj\n7iOCs/6XDC6FO+wqua5BwBhC6lal+EVqiu5g63n3eQKBgQDvPnI08+cQWDVIyeE6\n+Yg+2xrUZlCQtVnVGgcd2VAAPMdeaMzgznCmsxWJfBo8NCMkmWU17g7o4mOtz869\njW1n+RJkntDTMVD5Ym2w5OJzhO7KMPpHwMGKZY+UtxfIDqDfPZki5F3QQFfuWaZp\nkcNCRpAj3kCbTMmFMZauzL5KDQKBgQDqBDMQ9te2M0w98wGLkWiTCsxhFIR9DLUO\nersHAcF667vx6SmJKQ4GLMN/yzx6CN8lvi2yLVZcmo+CtLL+mPv0gme1+HZJT4eN\nIB+6M92PFK46oQkJrJOMcX/bzApuRMQH6tdwN4HRtNk+it70UHYw+0Q/UnxV5MfE\nXJghCmUn1QKBgQC8u1J1G4PIjQ1b4oZfc8Jbc5VywVQFFEtNpT6/+VL3HPtaKuqU\n3cZYeyYeU1yO6cJfePMy3B2+8fkYgLrjJdKNFxu/bNnoARuT4GYQCj/qSY/myURn\nnlQPzZa7BsUn+QJHmdxYfjbTti6nxOlWlrqmaewDn6zv1l+TR09LjhD/cQKBgQDX\n6aYAKe/fALeAlNxBHJlCyfzGOXsAMaA/yscS8PDF7AhNa9ZR4do5okWCfE7BPbw9\ng5l/wsriyAxPCU/5Dcex0jvELolcnI8xi4kacM4kPG2AVKIVFfBQ7UuNzVV2ZeYE\ndA3wUJZrmROz28dX3YEfMkXGsuFbEqmqJ9CI86FfPQKBgQCRwjiVN2332k+o6Ngm\n2m0zTr+PR2cUxCXKUX9Qm+59hUYYbyjOSUSSia5xgquuYk0IuJkSSxgtkU0RyDgR\n4ouhJGb4Gl5ARmxE0TOiwQZc3jvCk2kg5GsRnbQZPv1VWoPmGRp0iy+zM2ktNQES\nkz/IKpGjQRKu+MtW2iBtq7KxYg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-a6dl9@king-s-kids-project.iam.gserviceaccount.com",
+  "client_id": "105893487130748534652",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-a6dl9%40king-s-kids-project.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
